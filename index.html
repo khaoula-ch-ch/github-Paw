@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+	    <meta charset="UTF-8">
+    	<title>formulaire</title>
+	    <meta name="keywords" content="web,html">
+	    <script src="nv.js">	</script>
+    </head>
+    <body>
+	    <form method="POST" action="reception.PHP">
+	        <fieldset>
+			        <legend><b>Candidat:</b></legend>
+		        <fieldset>
+                    <legend><b>Identitie:</b></legend>
+
+	     		    <label>Nom:</label>
+			        <input type="text" name="Nom">		&nbsp;
+                    <label>Prenom:</label>
+			        <input type="text" name="Prenom">	<br><br>
+                    
+                    <label>Téléphone</label>
+                    <input type="text" name="phone"><br><br>
+
+				    <label>Sexe:</label>
+			        <select name="Sexe">
+			            <option value =""> </option>
+	    	   	        <option value ="F">Femme</option>
+		       	        <option value ="H">Homme</option>
+                    </select>                          &nbsp;&nbsp;
+
+	    		    <label>Situation:</label>
+	   	    	    <select name="Situation">
+			            <option value =""> </option>
+				        <option value ="marier">Marié </option>
+			            <option value ="celibataire">Celibataire</option>
+		                <option value ="devorcer">Dévorcé</option>
+		            </select>	<br><br>
+
+                    <label>Adresse courriel:</label>
+                    <input type="email" name="adresse_email">  	<br><br>
+
+                    <label>Code postalle:</label>
+			        <input type="text" name="code">		&nbsp;
+                    <label>Ville:</label>
+			        <input type="text" name="ville">	<br><br>
+
+		            <label>Adresse:</label><br>
+        	    	<textarea rows="5" cols="25">
+                    </textarea>	<br><br>
+
+			        <label>Wilaya:</label>
+	    	        <select name="wilaya">
+	           	        <option value ="Adrar">01 Adrar</option>
+    		    		<option value ="Blida">09 Blida </option>
+                        <option value ="Tizi Ouzou">15 Tizi Ouzou</option>
+	    		   	    <option value ="Alger">16 Alger</option>
+		    	        <option value ="Jijel">18 Jijel</option>
+			       	    <option value ="Constantine">25 Constantine</option>
+                        <option value ="Oran">31 Oran</option>
+                        <option value ="Aïn Témouchent">46 Aïn Témouchent</option>
+                        <option value ="Autre">Autre</option>
+                    </select>	<br><br>
+
+	  		    </fieldset>
+	   	        <fieldset>
+		            <legend><b>Compétences en informatique:</b> </legend>
+
+		            <label>Platforme(s):</label>
+    		        <input type="checkbox"name="Windows">Windows
+	    	        <input type="checkbox" name="Android">Android
+		    	    <input type="checkbox" name="Linux">Linux		<br><br>
+
+			        <label>Langage(s) de programmation:</label>
+		     	    <input type="checkbox" name="Java">Java
+    		        <input type="checkbox" name="C++">C++
+                    <input type="checkbox" name="Python">Python
+		        	<input type="checkbox" name="PHP">PHP
+                    <input type="checkbox" name="Autres">Autres	<br><br>
+
+                    <label>S'il y on a autres sité les:</label> <br>
+                    <textarea rows="4" cols="20"></textarea>
+
+	            </fieldset>	<br><br>
+
+	  	        <label>Upload votre CV:</label>
+	 	        <input type="file" accept=".PDF,.DOCX"> (Ficher pdf ou docx )
+                <br><br>
+            </fieldset>
+
+	  		<input type ="submit" value ="Valider le formulaire" >
+			<input type ="reset" value="Réemplire le formulaire" >
+		    <br><br>
+        </form>
+    </body>
+</html>
